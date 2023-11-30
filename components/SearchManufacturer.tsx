@@ -38,7 +38,7 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
             className='search-manufacturer__input'
             displayValue={(item: string) => item}
             onChange={(event) => setQuery(event.target.value)} // Update the search query when the input changes
-            placeholder='Porsche...'
+            placeholder='Volkswagen...'
           />
 
           {/* Transition for displaying the options */}
@@ -66,7 +66,7 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
                     key={item}
                     className={({ active }) =>
                       `relative search-manufacturer__option ${
-                        active ? "bg-primary-green text-white" : "text-gray-900"
+                        active ? "bg-primary-blue text-white" : "text-gray-900"
                       }`
                     }
                     value={item}
