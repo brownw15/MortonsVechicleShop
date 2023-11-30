@@ -25,4 +25,4 @@ const NavBar = () => (
   </header>
 );
 
-export default NavBar;
+export default NavBar
