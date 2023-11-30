@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import { calculateCarRent, generateCarImageUrl } from "@utils";
-import { CarProps } from "@types";
+import { calculateCarRent, generateCarImageUrl } from "../utils";
+import { CarProps } from "../types";
 import CustomButton from "./CustomButton";
 import CarDetails from "./CarDetails";
 
@@ -23,7 +23,7 @@ const CarCard = ({ car }: CarCardProps) => {
     <div className="car-card group">
       <div className="car-card__content">
         <h2 className="car-card__content-title">
-          {make} {model}
+          {year} {make} {model} 
         </h2>
       </div>
 
@@ -57,8 +57,8 @@ const CarCard = ({ car }: CarCardProps) => {
 
         <div className="car-card__btn-container">
           <CustomButton
-            title='View More'
-            containerStyles='w-full py-[16px] rounded-full bg-primary-blue'
+            title='Details'
+            containerStyles='w-full py-[16px] rounded-full bg-primary-red'
             textStyles='text-white text-[14px] leading-[17px] font-bold'
             rightIcon='/right-arrow.svg'
             handleClick={() => setIsOpen(true)}
@@ -67,6 +67,7 @@ const CarCard = ({ car }: CarCardProps) => {
       </div>
 
       <CarDetails isOpen={isOpen} closeModal={() => setIsOpen(false)} car={car} />
+      {/* Car Detail modal close function */}
     </div>
   );
 };

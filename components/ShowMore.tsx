@@ -2,9 +2,9 @@
 
 import { useRouter } from "next/navigation";
 
-import { ShowMoreProps } from "@types";
-import { updateSearchParams } from "@utils";
-import { CustomButton } from "@components";
+import { ShowMoreProps } from "../types";
+import { updateSearchParams } from "../utils";
+import { CustomButton } from "../components";
 
 const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
   const router = useRouter();
@@ -25,7 +25,7 @@ const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
         <CustomButton
           btnType="button"
           title="Show More"
-          containerStyles="bg-primary-blue rounded-full text-white"
+          containerStyles="bg-primary-red rounded-full text-white"
           handleClick={handleNavigation}
         />
       )}
