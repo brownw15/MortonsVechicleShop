@@ -16,7 +16,7 @@ const Hero = () => {
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
         <h1 className="hero__title">
-          Search for, Buy & Lease Porsches quick and easily!
+          Search for, Buy or Lease a Luxury Vehicle today!
         </h1>
 
         <p className="hero__subtitle">
